@@ -45,6 +45,7 @@ VARIANTS = {
     "scania-scrum-master": {
         "display_role": "Scrum Master - Security Platform, Software Update and Diagnostics",
         "position": "Software Developer | Agile Delivery | Backend Services | Continuous Improvement",
+        "msc_role": "Scrum Master and Senior Developer",
         "summary": [
             "Software Developer with 8+ years of IT experience and strong hands-on background in Java backend systems, agile delivery, production support and cross-functional collaboration.",
             "Experienced in sprint-based delivery with product owners, QA, DevOps, and engineering teams, including code reviews, knowledge sharing, impediment handling, CI/CD, and production-quality software.",
@@ -369,7 +370,7 @@ def render(label, data):
     parts.append("\\cvsection{Selected Achievements and Highlights}\n" + cvitems(data["target_fit"][:3] + COMMON_QUANTIFIED_HIGHLIGHTS))
     parts.append("\\cvsection{Technical Skills}\n" + cvskills(data["skills"]))
     parts.append("\\cvsection{Work Experience}\n\\begin{cventries}")
-    parts.append(cventry(BASE_EXPERIENCE["msc"]["role"], BASE_EXPERIENCE["msc"]["company"], BASE_EXPERIENCE["msc"]["location"], BASE_EXPERIENCE["msc"]["dates"], data["msc_bullets"]))
+    parts.append(cventry(data.get("msc_role", BASE_EXPERIENCE["msc"]["role"]), BASE_EXPERIENCE["msc"]["company"], BASE_EXPERIENCE["msc"]["location"], BASE_EXPERIENCE["msc"]["dates"], data["msc_bullets"]))
     parts.append(cventry(BASE_EXPERIENCE["clariter"]["role"], BASE_EXPERIENCE["clariter"]["company"], BASE_EXPERIENCE["clariter"]["location"], BASE_EXPERIENCE["clariter"]["dates"], COMMON_CLARITER))
     parts.append(cventry(BASE_EXPERIENCE["apps"]["role"], BASE_EXPERIENCE["apps"]["company"], BASE_EXPERIENCE["apps"]["location"], BASE_EXPERIENCE["apps"]["dates"], COMMON_APPS))
     parts.append("\\end{cventries}")
