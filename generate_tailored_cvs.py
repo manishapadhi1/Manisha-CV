@@ -260,6 +260,39 @@ VARIANTS = {
             "Troubleshoot production issues using Grafana, Prometheus, NewRelic, logs and metrics, then feed learnings into technical improvements.",
         ],
     },
+
+    "darwin-application-engineer": {
+        "company": "Darwin Recruitment",
+        "display_role": "Senior Application Support Engineer (L2/L3) - Stockholm",
+        "position": "Senior Application Support Engineer | L2/L3 Production Support | Java & Spring Boot",
+        "summary": [
+            "Senior software and application support professional with 8+ years of enterprise IT experience, including 3+ years focused on Java/Spring Boot backend systems, production support and operational reliability.",
+            "Experienced supporting business-critical applications through incident analysis, root-cause investigation, release readiness, monitoring, stakeholder communication and cross-functional coordination.",
+            "Strong fit for L2/L3 application support in telecom or high-availability environments, with practical experience in Java services, REST APIs, SQL databases, CI/CD, observability and production troubleshooting.",
+        ],
+        "target_fit": [
+            "Supports critical production systems by analyzing incidents, coordinating fixes, validating releases and communicating status with technical and non-technical stakeholders.",
+            "Applies Java, Spring Boot, REST API, SQL/PostgreSQL, Redis, Docker, Kubernetes, CI/CD and observability experience to diagnose and stabilize application behaviour.",
+            "Uses Grafana, Prometheus, NewRelic, logs and metrics to investigate production issues, identify patterns and improve operational reliability.",
+            "Works effectively across Incident, Problem and Change Management contexts, with documentation and handover discipline for long-running support and improvement work.",
+            "Brings strong ownership for L2/L3 support, major incident coordination, automation opportunities and 24x7 operations readiness.",
+        ],
+        "skills": [
+            ("Application support", "L2/L3 production support, incident analysis, root-cause investigation, release validation, operational handover, stakeholder communication"),
+            ("Java stack", "Java 17/21, Spring Boot, Spring WebFlux, REST APIs, Maven, JUnit, Mockito, integration testing, clean code practices"),
+            ("Runtime and data", "JBoss application server context, PostgreSQL, SQL, MySQL concepts, Redis, JSON, XML, data validation, query troubleshooting"),
+            ("ITSM operations", "Incident Management, Problem Management, Change Management, ITIL process alignment, ServiceNow-style ticket workflows"),
+            ("Observability and automation", "Grafana, Prometheus, NewRelic, logging, metrics, alerting, CI/CD, Docker, Kubernetes, GitHub Actions, Linux"),
+        ],
+        "msc_bullets": [
+            "Support business-critical Java 17 backend services and REST APIs in production, taking ownership of incidents from investigation through fix validation and release follow-up.",
+            "Troubleshoot production behaviour using logs, metrics, Grafana, Prometheus and NewRelic, identifying root causes across application logic, integrations and data handling.",
+            "Work with product owners, QA, DevOps and engineers to clarify incidents, prioritize fixes, coordinate releases and communicate operational status.",
+            "Maintain Spring Boot and Spring WebFlux services backed by PostgreSQL, SQL, Redis, JSON and XML, with focus on reliable data handling and service behaviour.",
+            "Improve supportability through automated tests, integration checks, API validation, documentation and repeatable handover workflows.",
+            "Use Docker, Kubernetes, Git, GitHub Actions, Maven and CI/CD practices to support stable deployment, release readiness and operational continuity.",
+        ],
+    },
 }
 
 # Add clariter/apps/project bullets common or lightly tailored
@@ -348,7 +381,7 @@ def cventry(role, company, location, dates, bullets):
 
 
 def render(label, data):
-    title = f"Scania - {data['display_role']}"
+    title = f"{data.get('company', 'Scania')} - {data['display_role']}"
     parts = []
     parts.append("%!TEX TS-program = xelatex")
     parts.append("%!TEX encoding = UTF-8 Unicode")
@@ -389,7 +422,7 @@ def render(label, data):
 for label, data in VARIANTS.items():
     (TEX_DIR / f"{label}.tex").write_text(render(label, data), encoding="utf-8")
 
-readme = ["# Tailored Scania CV PDFs", "", "Generated from the Scania job listings supplied by the user. Filenames follow `company-role` labels.", ""]
+readme = ["# Tailored CV PDFs", "", "Generated from job listings supplied by the user. Filenames follow `company-role` labels.", ""]
 for label, data in VARIANTS.items():
     readme.append(f"- `{label}.pdf` — {data['display_role']}")
 (Path(ROOT) / "tailored_pdfs" / "README.md").write_text("\n".join(readme) + "\n", encoding="utf-8")

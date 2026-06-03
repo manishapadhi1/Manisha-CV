@@ -1,6 +1,6 @@
-# Tailored Scania CV PDFs
+# Tailored CV PDFs
 
-Generated from the Scania job listings supplied by the user. Filenames follow `company-role` labels.
+Generated from job listings supplied by the user. Filenames follow `company-role` labels.
 
 - `scania-scrum-master.pdf` — Scrum Master - Security Platform, Software Update and Diagnostics
 - `scania-applied-ai-solutions-engineer.pdf` — Applied AI Solutions Engineer - TRATON R&D AI Enablement
@@ -9,3 +9,4 @@ Generated from the Scania job listings supplied by the user. Filenames follow `c
 - `scania-business-it-analyst.pdf` — Business IT Analyst - Technical Training and BCM
 - `scania-devops-product-owner.pdf` — DevOps Product Owner
 - `scania-lead-solution-architect.pdf` — Lead Solution Architect - Finance IT
+- `darwin-application-engineer.pdf` — Senior Application Support Engineer (L2/L3) - Stockholm
