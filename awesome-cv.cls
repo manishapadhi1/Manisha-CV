@@ -109,6 +109,11 @@
 %% Page Layout
 % Configure page margins with geometry
 \geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+% Keep employer-facing resume text clean: avoid awkward automatic word breaks
+% such as "function-ality" in narrow bullet lines.
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=3em
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -228,7 +233,7 @@
 \newcommand*{\headersocialstyle}[1]{{\fontsize{9pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\upshape\color{graytext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\textcolor{text}{#1}}}
 
 % For elements of project
@@ -627,9 +632,10 @@
 \newenvironment{proitems}{
   \vspace{-8mm}
   \begin{justify}
+  \fontsize{9.5pt}{1.15em}\bodyfont\upshape\color{text}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
-    \renewcommand{\labelitemi}{\bullet}
+    \renewcommand{\labelitemi}{\textbullet}
 }{
   \end{itemize}
   \end{justify}
@@ -640,9 +646,10 @@
 \newenvironment{cvitems}{
   \vspace{-4mm}
   \begin{justify}
+  \fontsize{9.5pt}{1.15em}\bodyfont\upshape\color{text}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
-    \renewcommand{\labelitemi}{\bullet}
+    \renewcommand{\labelitemi}{\textbullet}
 }{
   \end{itemize}
   \end{justify}

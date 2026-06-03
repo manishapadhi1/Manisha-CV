@@ -9,7 +9,7 @@ PDF_DIR.mkdir(exist_ok=True)
 COMMON_CONTACT = {
     "name_first": "Manisha",
     "name_last": "Padhi",
-    "address": "Lgh 1301, Skoldvagen 7, Stockholm, 15151, Sweden",
+    "address": "Stockholm, Sweden",
     "phone": "+46 767852019",
     "email": "manishapadhi08@gmail.com",
     "github": "manishapadhi1",
@@ -44,14 +44,14 @@ COMMON_EDUCATION = [
 VARIANTS = {
     "scania-scrum-master": {
         "display_role": "Scrum Master - Security Platform, Software Update and Diagnostics",
-        "position": "Scrum Master | Agile Delivery | Java Backend | Diagnostics Platform",
+        "position": "Software Developer | Agile Delivery | Backend Services | Continuous Improvement",
         "summary": [
             "Software Developer with 8+ years of IT experience and strong hands-on background in Java backend systems, agile delivery, production support and cross-functional collaboration.",
-            "Well matched to Scania/TRATON Scrum Master work through experience with sprint-based delivery, product owners, QA, DevOps, engineers, code reviews, knowledge sharing, impediment handling, CI/CD and production-quality software.",
+            "Experienced in sprint-based delivery with product owners, QA, DevOps, and engineering teams, including code reviews, knowledge sharing, impediment handling, CI/CD, and production-quality software.",
             "Brings practical technical credibility for teams working with backend services, microservices, diagnostics-adjacent platforms, connectivity, security mindset and continuous improvement.",
         ],
         "target_fit": [
-            "Can facilitate sprint planning, reviews, retrospectives and daily stand-ups from a developer perspective while keeping delivery focused on value, flow and quality.",
+            "Facilitates agile delivery conversations from a developer perspective, keeping team discussions focused on value, flow, quality, and release readiness.",
             "Experienced collaborating with product owners, QA, DevOps and engineers to align priorities, dependencies and release readiness in agile teams.",
             "Hands-on Java, Spring Boot, REST API, microservice, Kubernetes, CI/CD, Grafana and production support background gives credibility with technical teams.",
             "Comfortable coaching colleagues, reviewing code, documenting workflows and strengthening common ways of working across distributed teams.",
@@ -75,14 +75,14 @@ VARIANTS = {
     },
     "scania-applied-ai-solutions-engineer": {
         "display_role": "Applied AI Solutions Engineer - TRATON R&D AI Enablement",
-        "position": "Applied AI Solutions Engineer | Backend Automation | Agentic Workflows",
+        "position": "Software Developer | Backend Services | APIs | Automation | AI-Enabled Workflows",
         "summary": [
             "Software Developer with 8+ years of experience building backend services, APIs, automation and production systems, with strong interest in AI-powered developer workflows and practical enterprise adoption.",
-            "Well matched to TRATON R&D AI Enablement through hands-on engineering, ability to translate unclear needs into working prototypes, and experience collaborating with users, product owners, QA, DevOps and engineers.",
+            "Experienced translating unclear user and engineering needs into working prototypes, backend integrations, and production-ready services in collaboration with users, product owners, QA, DevOps, and engineering teams.",
             "Brings a pragmatic build-first mindset for agentic workflows: decomposing problems, connecting tools and APIs, iterating with users and measuring impact on speed, quality and collaboration.",
         ],
         "target_fit": [
-            "Can analyze business or engineering friction and split work into deterministic logic, human review and AI-assisted workflow steps.",
+            "Analyzes business and engineering friction, separating deterministic logic, human review steps, and AI-assisted workflow opportunities.",
             "Experienced building backend services, REST APIs, automation, testable integrations and CI/CD flows that can become reusable AI-enabled capabilities.",
             "Comfortable working hands-on with stakeholders to clarify ambiguous needs, prototype solutions and improve adoption based on feedback.",
             "Practical exposure to AI-powered development tools, cloud concepts, Docker, GitHub Actions and developer enablement workflows.",
@@ -106,14 +106,14 @@ VARIANTS = {
     },
     "scania-vehicle-function-owner": {
         "display_role": "Vehicle Function Owner - Charging Domain",
-        "position": "Vehicle Function Owner | Requirements | Backend Integration | Charging Domain",
+        "position": "Software Developer | Requirements | Backend Integration | Quality Engineering",
         "summary": [
             "Software Developer with 8+ years of IT experience connecting business needs, system behaviour, requirements, implementation, testing and production quality.",
-            "Relevant to Scania/TRATON Vehicle Function Owner work through structured requirements handling, stakeholder communication, traceability mindset, integration testing, risk awareness and experience with complex distributed systems.",
+            "Experienced in structured requirements handling, stakeholder communication, traceability mindset, integration testing, risk awareness, and complex distributed systems.",
             "Brings strong software engineering discipline for charging-related vehicle functions: translating needs into clear requirements, aligning teams and ensuring testable, reliable delivery.",
         ],
         "target_fit": [
-            "Can translate customer and stakeholder needs into clear functional requirements, acceptance criteria, test cases and delivery follow-up.",
+            "Translates customer and stakeholder needs into clear requirements, acceptance criteria, test cases, and delivery follow-up.",
             "Experienced managing dependencies across product owners, QA, DevOps, engineers and operational stakeholders in agile delivery.",
             "Strong testing and quality mindset through JUnit, Mockito, integration tests, API checks, production support and incident analysis.",
             "Relevant technical foundation in distributed systems, APIs, secure interfaces, data validation and reliable system behaviour.",
@@ -137,11 +137,11 @@ VARIANTS = {
     },
     "scania-developer-traton-rd-iot-gateway": {
         "display_role": "Developer for TRATON R&D IoT Gateway",
-        "position": "Backend Developer | IoT Gateway | Cloud Connectivity | DevSecOps",
+        "position": "Backend Developer | Cloud Connectivity | APIs | DevSecOps",
         "summary": [
             "Senior backend developer with 8+ years of experience and 3+ years focused on Java, Spring Boot, REST APIs, microservices, databases, production systems and agile delivery.",
-            "Strong match for TRATON R&D IoT Gateway through backend service development, cloud and container exposure, secure integrations, CI/CD, monitoring, production support and interest in vehicle connectivity.",
-            "Can contribute to robust communication platforms by building APIs, internal tools, event-ready services, test automation and operational improvements with a DevSecOps mindset.",
+            "Strong background in backend service development, cloud and container exposure, secure integrations, CI/CD, monitoring, production support, and connected-system reliability.",
+            "Contributes to robust communication platforms through APIs, internal tools, event-ready services, test automation, and operational improvements with a DevSecOps mindset.",
         ],
         "target_fit": [
             "Build, test, deploy and maintain backend services and internal tools with end-to-end ownership and production accountability.",
@@ -168,14 +168,14 @@ VARIANTS = {
     },
     "scania-business-it-analyst": {
         "display_role": "Business IT Analyst - Technical Training and BCM",
-        "position": "Business IT Analyst | Training Coordination | Agile Change Management",
+        "position": "Software Developer | Business IT Analysis | Agile Coordination | Training Support",
         "summary": [
             "Software and business-oriented IT professional with 8+ years of experience across backend systems, stakeholder dialogue, agile delivery, documentation, training support and production operations.",
-            "Strong fit for Business IT Analyst work through structured coordination, backlog follow-up, training material quality, stakeholder communication, Jira-style agile collaboration and continuous improvement.",
+            "Experienced in structured coordination, backlog follow-up, documentation quality, stakeholder communication, agile collaboration, and continuous improvement.",
             "Combines technical understanding with clear communication to bridge business users, trainers, system owners and development teams in international environments.",
         ],
         "target_fit": [
-            "Can coordinate backlog items, follow up activities, create structure and maintain clarity across multiple stakeholders.",
+            "Coordinates backlog items, follows up activities, creates structure, and maintains clarity across multiple stakeholders.",
             "Experienced documenting workflows, supporting users, clarifying needs and communicating technical topics to non-technical stakeholders.",
             "Comfortable in agile teams with product owners, QA, DevOps, engineers and business stakeholders, including facilitation and follow-up.",
             "Technical background in software engineering, databases, integrations and production support helps understand CAD/PDM-adjacent IT environments quickly.",
@@ -199,17 +199,17 @@ VARIANTS = {
     },
     "scania-devops-product-owner": {
         "display_role": "DevOps Product Owner",
-        "position": "DevOps Product Owner | CI/CD | Developer Experience | Platform Engineering",
+        "position": "Software Developer | DevOps | CI/CD | Developer Experience",
         "summary": [
             "Senior software developer with 8+ years of IT experience across backend systems, CI/CD, containers, monitoring, production support and agile team collaboration.",
-            "Well matched to DevOps Product Owner work through practical developer experience, backlog and priority collaboration, automation mindset, stakeholder communication and focus on engineering productivity.",
+            "Combines practical developer experience with backlog and priority collaboration, automation mindset, stakeholder communication, and focus on engineering productivity.",
             "Can translate developer needs into clear platform value around CI/CD, infrastructure, automation, security, quality, observability and developer experience.",
         ],
         "target_fit": [
             "Understands developer pain points first-hand and can prioritize DevOps capabilities that improve speed, quality and operational excellence.",
             "Experience with GitHub Actions, Docker, Kubernetes, Maven, Linux, CI/CD, Grafana, Prometheus, logging and production troubleshooting.",
             "Comfortable collaborating with developers, architects, DevOps, QA, product owners and business stakeholders to align technical needs with business value.",
-            "Can monitor delivery capability through KPIs such as build quality, deployment reliability, incident trends, automation coverage and developer feedback.",
+            "Uses delivery signals such as build quality, deployment reliability, incident trends, automation coverage, and developer feedback to guide improvements.",
             "Ready to work with GitLab CI, Jenkins, AWS, Terraform, Ansible, Artifactory, Jira and Confluence using strong adjacent DevOps foundations.",
         ],
         "skills": [
@@ -230,16 +230,16 @@ VARIANTS = {
     },
     "scania-lead-solution-architect": {
         "display_role": "Lead Solution Architect - Finance IT",
-        "position": "Solution Architecture | Enterprise Integration | Finance IT Transformation",
+        "position": "Software Developer | Solution Architecture | Enterprise Integration",
         "summary": [
             "Senior software developer with 8+ years of experience in enterprise applications, backend services, integrations, databases, production systems and stakeholder collaboration.",
-            "Relevant to Lead Solution Architect work through strong hands-on architecture foundations: APIs, microservices, data handling, secure interfaces, cloud/container awareness, integration design and maintainable enterprise solutions.",
+            "Brings hands-on architecture foundations in APIs, microservices, data handling, secure interfaces, cloud/container awareness, integration design, and maintainable enterprise solutions.",
             "Can support Finance IT transformation by bridging business and IT, documenting target-state decisions, aligning stakeholders and designing scalable, secure, value-driven solutions.",
         ],
         "target_fit": [
             "Practical experience designing and maintaining APIs, microservices, database-backed systems, integrations and production-quality enterprise applications.",
             "Background in finance and economics plus software engineering supports understanding of Finance IT, legal/compliance-adjacent processes and ERP transformation contexts.",
-            "Can collaborate with architects, product owners, DevOps, engineers and business stakeholders to align solution design with business goals.",
+            "Collaborates with architects, product owners, DevOps, engineers, and business stakeholders to align solution design with business goals.",
             "Relevant exposure to data platforms, APIs, event-driven architecture awareness, cloud concepts, AI/LLM interest and reusable data products.",
             "Strong communication, documentation, code review and mentoring habits that support architectural leadership and team guidance.",
         ],
@@ -327,6 +327,13 @@ def cvskills(items):
     return "\\begin{cvskills}\n" + "\n".join(f"  \\cvskill{{{tex_escape(k)}}}{{{tex_escape(v)}}}" for k, v in items) + "\n\\end{cvskills}"
 
 
+def cvparagraphs(items):
+    blocks = []
+    for item in items:
+        blocks.append(f"\\noindent\\descriptionstyle{{{tex_escape(item)}}}\\par")
+    return "\\vspace{-0.5ex}\n" + "\n\\vspace{0.6ex}\n".join(blocks)
+
+
 def cventry(role, company, location, dates, bullets):
     return (
         f"\\cventry{{{tex_escape(role)}}}{{{tex_escape(company)}}}{{{tex_escape(location)}}}{{{tex_escape(dates)}}}{{\n"
@@ -353,9 +360,8 @@ def render(label, data):
     parts.append("\\usepackage{import}")
     parts.append("\\begin{document}")
     parts.append("\\makecvheader")
-    parts.append(f"\\cvsection{{Target Role}}\n{cvskills([('Company and role', title), ('Location', 'Sodertalje / Stockholm region, Sweden'), ('Work authorization', 'EU long-term residence permit; does not need sponsorship')])}")
-    parts.append("\\cvsection{Professional Summary}\n" + cvskills([("Summary", s) for s in data["summary"]]))
-    parts.append("\\cvsection{Target Role Fit}\n" + cvitems(data["target_fit"]))
+    parts.append("\\cvsection{Professional Summary}\n" + cvparagraphs(data["summary"]))
+    parts.append("\\cvsection{Selected Highlights}\n" + cvitems(data["target_fit"][:4]))
     parts.append("\\cvsection{Technical Skills}\n" + cvskills(data["skills"]))
     parts.append("\\cvsection{Work Experience}\n\\begin{cventries}")
     parts.append(cventry(BASE_EXPERIENCE["msc"]["role"], BASE_EXPERIENCE["msc"]["company"], BASE_EXPERIENCE["msc"]["location"], BASE_EXPERIENCE["msc"]["dates"], data["msc_bullets"]))
