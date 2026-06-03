@@ -77,7 +77,7 @@
   \RequirePackage[utf8]{inputenc}
 \fi
 % Needed to manage math fonts
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage[math-style=TeX]{unicode-math}
 % Needed to use icons from font-awesome
 % (https://github.com/posquit0/latex-fontawesome)
 \RequirePackage{fontawesome}
@@ -86,10 +86,10 @@
 % Needed to deal hyperlink
 \RequirePackage{hyperref}
 \hypersetup{
-  pdftitle={},
-  pdfauthor={},
-  pdfsubject={},
-  pdfkeywords={},
+  pdftitle={Manisha Padhi CV},
+  pdfauthor={Manisha Padhi},
+  pdfsubject={Software Developer CV},
+  pdfkeywords={Java, Spring Boot, REST APIs, Microservices, Banking, Software Developer},
   colorlinks=false,
   allbordercolors=white
 }
@@ -184,8 +184,8 @@
 
 \newfontfamily\headerfontlight[
   Path=\@fontdir,
-  UprightFont=*-Thin,
-  ItalicFont=*-ThinItalic,
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
   BoldFont=*-Medium,
   BoldItalicFont=*-MediumItalic,
 ]{Roboto}
@@ -209,8 +209,8 @@
 
 \newfontfamily\bodyfontlight[
   Path=\@fontdir,
-  UprightFont=*-Light,
-  ItalicFont=*-LightIt,
+  UprightFont=*-Regular,
+  ItalicFont=*-It,
   BoldFont=*-Semibold,
   BoldItalicFont=*-SemiboldIt
 ]{SourceSansPro}
@@ -221,26 +221,26 @@
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
 % For fundamental structures
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
-\newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
-\newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
-\newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{28pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{28pt}{1em}\headerfont\bfseries\color{text} #1}}
+\newcommand*{\headerpositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{darktext} #1}}
+\newcommand*{\headeraddressstyle}[1]{{\fontsize{9pt}{1em}\headerfont\upshape\color{text} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{9pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
-\newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
+\newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\upshape\color{graytext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
-\newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
+\newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\textcolor{text}{#1}}}
 
 % For elements of project
 \newcommand*{\proentrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\prodescriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\prodescriptionstyle}[1]{{\fontsize{9.5pt}{1.15em}\bodyfont\upshape\color{text} #1}}
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
-\newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\upshape\color{text} #1}}
+\newcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\upshape\color{text} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\upshape\color{text} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{9.5pt}{1.15em}\bodyfont\upshape\color{text} #1}}
 
 % For elements of subentry
 \newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
@@ -257,7 +257,7 @@
 
 % For elements of skill
 \newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
+\newcommand*{\skillsetstyle}[1]{{\fontsize{9.5pt}{1.15em}\bodyfont\color{text} #1}}
 
 % For elements of the cover letter
 \newcommand*{\paragraphstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
@@ -413,7 +413,7 @@
       \ifthenelse{\isundefined{\@mobile}}
         {}
         {
-          \faMobile\ \@mobile
+          Phone: \@mobile
           \setbool{isstart}{false}
         }
       \ifthenelse{\isundefined{\@email}}
@@ -424,7 +424,7 @@
               \setbool{istart}{false} 
             }
             {\@headersocialsep}
-          \href{mailto:\@email}{\faEnvelope\ \@email}
+          \href{mailto:\@email}{Email: \@email}
         }
       \ifthenelse{\isundefined{\@homepage}}
         {}
@@ -434,7 +434,7 @@
               \setbool{istart}{false} 
             }
             {\@headersocialsep}
-          \href{http://\@homepage}{\faHome\ \@homepage}
+          \href{http://\@homepage}{Website: \@homepage}
         }
       \ifthenelse{\isundefined{\@github}}
         {}
@@ -444,7 +444,7 @@
               \setbool{istart}{false} 
             }
             {\@headersocialsep}
-          \href{https://github.com/\@github}{\faGithubSquare\ \@github}
+          \href{https://github.com/\@github}{GitHub: https://github.com/\@github}
         }
       \ifthenelse{\isundefined{\@stackoverflowid}}
         {}
@@ -454,7 +454,7 @@
               \setbool{istart}{false} 
             }
             {\@headersocialsep}
-          \href{https://stackoverflow.com/users/\@stackoverflowid}{\faStackOverflow\ \@stackoverflowname}
+          \href{https://stackoverflow.com/users/\@stackoverflowid}{Stack Overflow: \@stackoverflowname}
         }
       \ifthenelse{\isundefined{\@linkedin}}
         {}
@@ -464,7 +464,7 @@
               \setbool{istart}{false} 
             }
             {\@headersocialsep}
-          \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedinSquare\ \@linkedin}
+          \href{https://www.linkedin.com/in/\@linkedin}{LinkedIn: https://www.linkedin.com/in/\@linkedin}
         }
       \ifthenelse{\isundefined{\@twitter}}
         {}
@@ -474,7 +474,7 @@
               \setbool{istart}{false} 
             }
             {\@headersocialsep}
-          \href{https://twitter.com/\@twitter}{\faTwitter\ \@twitter}
+          \href{https://twitter.com/\@twitter}{Twitter: https://twitter.com/\@twitter}
         }
       \ifthenelse{\isundefined{\@skype}}
         {}
@@ -484,7 +484,7 @@
               \setbool{istart}{false} 
             }
             {\@headersocialsep}
-          \faSkype\ \@skype
+          Skype: \@skype
         }
     } \\
     \ifthenelse{\isundefined{\@quote}}
@@ -539,8 +539,8 @@
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
-      \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\
+      \entrytitlestyle{#2} & \entrylocationstyle{#3} \\}
     \multicolumn{2}{L{17cm}}{\descriptionstyle{#5}} \\
   \end{tabular*}
 }
