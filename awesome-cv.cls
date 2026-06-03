@@ -615,9 +615,9 @@
 % Define an environment for cvskill
 \newenvironment{cvskills}{
   \begin{center}
-    \setlength\tabcolsep{1ex}
+    \setlength\tabcolsep{0.5ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{15.2cm}}
+    \begin{tabular*}{\textwidth}{@{} L{4.0cm} L{12.6cm} @{}}
 }{
     \end{tabular*}
   \end{center}
