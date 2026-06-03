@@ -1,0 +1,42 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt, a4paper]{awesome-cv}
+\fontdir[fonts/]
+\newcommand*{\sectiondir}{resume/}
+
+% Override color
+\colorlet{awesome}{awesome-red}
+
+% Personal Data
+\name{Manisha}{Padhi}
+\position{Software Developer{\enskip\cdotp\enskip}Java{\enskip\cdotp\enskip}Banking}
+\address{Lgh 1301, Skoldvagen 7, Stockholm, 15151, Sweden}
+\mobile{+46 767852019}
+\email{manishapadhi08@gmail.com}
+\github{manishapadhi1}
+
+\usepackage{import}
+
+\begin{document}
+\makecvheader
+
+\makecvfooter
+  {\today}
+  {Manisha Padhi~~~\cdot~~~Curriculum Vitae}
+  {\thepage}
+
+%%% Import contents
+\import{\sectiondir}{personal.tex}
+\import{\sectiondir}{education.tex}
+\import{\sectiondir}{skill.tex}
+\import{\sectiondir}{experience.tex}
+\import{\sectiondir}{projects.tex}
+\import{\sectiondir}{product.tex}
+\import{\sectiondir}{extracurricular.tex}
+
+\end{document}

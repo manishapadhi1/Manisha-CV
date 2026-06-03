@@ -1,0 +1,18 @@
+\cvsection{Project Highlights}
+\vspace{-3mm}
+\cvproject
+{Multi-Cloud Security Observability Platform (Datadog, ELK, Splunk)}
+{Designed and implemented an end-to-end security observability platform spanning AWS (primary), Azure and GCP. Set up Datadog as the central SIEM and observability tool, configured log pipelines ingesting from all cloud environments, wrote detection policies and security rules as code in GitLab CI. Indexed logs in the ELK Stack (Elasticsearch, Logstash, Kibana) for real-time search and forensics. Stored logs in Splunk for long-term IT forensics and compliance investigations. Detection policies were authored as policy-as-code enabling version-controlled, auditable security enforcement across multi-cloud workloads.}
+\cvproject
+{CDK setup of DevTools Stack}
+{CDK - Cloud Development Kit of AWS was used with Python and Java varients for deployment and configuration of devtools stacks which consisted of Gitlab, Jira, Confluence, Azure DevOps TFS server, JFrog Artifactory and Grafana applications. This was a fully automated setup with configuration as code with Ansible, secret stored in vault and deployent triggered through piplines - code build, code deploy on AWS}
+\cvproject
+{Manual deployments to IaC with Terraform}
+{This project started from zero i.e, containerizing legacy Java applications. Two Java developers were also engaged but DevOps work was totally handled by me. From writing terraform scripts, custom modules, etc to writing deployment workflows with terraform on dev, test and production.}
+\cvproject
+{Resurrecting a Kubernetes deployment.}
+{This short term assignment was to fix a messy kubernetes setup that had constant problems and data losses. The telecom client was using this application for provisioning telecom services and the application consistently crashed and had data losses. The assignment was to go through complex chain of deployment routines, a web of dependencies, decouple services that consisted of the application and redo the workflow. The application had an RPO of 1 week and RTO of 2 days, this was reduced to RPO of 1 hour and RTO of 3 hours which is a significant improvement to the service levels. }
+\cvproject
+{ELK Stack for Trading system}
+{ELK - Elastic search, Logstash and Kibana was setup for monitoring a critical trading application. This consisted of hosting elastic search, Logstash and Kibana with IaC and streaming the logs from the java application through log beat into elastic search, indexing it and then setting up kibana so these logs are searchable. Finally, I have also helped in setting alerts on certain logging patterns.}
+\vspace{-2mm}
